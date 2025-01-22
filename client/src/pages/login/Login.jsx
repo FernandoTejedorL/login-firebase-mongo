@@ -23,6 +23,7 @@ const Login = () => {
 					<label htmlFor='password'>Password</label>
 					<input type='text' name='password' id='password' />
 				</div>
+
 				<input type='submit' value='Login User' />
 			</form>
 		</>
