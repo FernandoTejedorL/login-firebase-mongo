@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const mongoose = require('mongoose');
-const moviesRoutes = require('./routes/movies.routes');
+const usersRoutes = require('./routes/users.routes');
 require('dotenv').config();
 
 const corsOptions = {
@@ -13,7 +13,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 app.use(express.json());
-app.use('/api/users', moviesRoutes);
+app.use('/api/users', usersRoutes);
 
 const startServer = async () => {
   try {
